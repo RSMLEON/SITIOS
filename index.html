@@ -1,85 +1,49 @@
-/* Estilos para el cuerpo y la raíz del documento */
-body, html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Alinea contenido en la parte superior */
-    background: linear-gradient(135deg, #2c3e50, #bdc3c7); /* Fondo degradado */
-    font-family: 'Arial', sans-serif; /* Tipo de letra */
-}
-
-/* Estilos para el contenedor del logo */
-.header {
-    width: 100%;
-    display: flex;
-    justify-content: left; /* Centra el logo horizontalmente */
-    padding: 10px; /* Espacio alrededor del logo */
-    margin-top: 0; /* Espacio arriba del logo */
-    margin-bottom: 10px; /* Espacio abajo del logo */
-}
-
-/* Estilos para el logo */
-.logo {
-    max-width: 150px; /* Ajusta el tamaño del logo */
-}
-
-/* Estilos para el contenedor de botones */
-.button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    top: 10px;
-}
-
-/* Estilos para los bloques de botones grandes y pequeños */
-.block-large, .block-small {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* Estilos para las filas */
-.row {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-/* Estilos generales para todos los botones */
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    border-radius: 15px; /* Bordes redondeados */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
-}
-
-/* Estilos específicos para los botones grandes */
-.button.large {
-    width: 15vw; /* Ajuste responsivo de tamaño */
-    height: 13vw; /* Ajuste responsivo de tamaño */
-    max-width: 160px; /* Máximo tamaño del botón */
-    max-height: 130px; /* Máximo tamaño del botón */
-    background-color: #3498db; /* Azul */
-    font-size: 1.5vw; /* Ajuste responsivo del tamaño de la fuente */
-}
-
-/* Estilos específicos para los botones pequeños */
-.button.small {
-    width: 10vw; /* Ajuste responsivo de tamaño */
-    height: 8vw; /* Ajuste responsivo de tamaño */
-    max-width: 100px; /* Máximo tamaño del botón */
-    max-height: 80px; /* Máximo tamaño del botón */
-    background-color: #2ecc71; /* Verde */
-    font-size: 1vw; /* Ajuste responsivo del tamaño de la fuente */
-}
-
-/* Efecto hover para todos los botones */
-.button:hover {
-    transform: scale(1.1); /* Aumenta el tamaño al hacer hover */
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSM TI</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Logo en la parte superior -->
+    <header class="header">
+        <img src="images/logo.png" alt="Logo de la Empresa" class="logo">
+    </header>
+    <div class="button-container">
+        <div class="block-large">
+            <div class="row">
+                <a href="https://myrsm.x10.mx/" class="button large" id="button1">Tickets</a>
+                <a href="https://rsmmex.sharepoint.com/sites/IDEAREQUERIMIENTOS" class="button large" id="button2">Idea</a>
+                <a href="https://rsmmex-my.sharepoint.com/:f:/g/personal/surname_ramirez_rsmmx_mx/EifACtVR_oxDvneb9e_BEkwB7hKTRTK8GPSWZ250wWx6_A?e=wijc8T" class="button large" id="button3">Contpaqi</a>
+                <a href="https://www.google.com/" class="button large" id="button4">Aspel</a>
+                <a href="https://www.google.com/" class="button large" id="button5">CW</a>
+            </div>
+            <div class="row">
+                <a href="https://www.google.com/" class="button large" id="button6">Active Directory</a>
+                <a href="https://www.google.com/" class="button large" id="button7">Ecomprobante</a>
+                <a href="https://rsmmex.sharepoint.com/sites/PROYECTOSDETECNOLOGIA" class="button large" id="button8">Proyectos Tec</a>
+                <a href="https://rsm.teachlr.com/" class="button large" id="button9">RSM Learning</a>
+                <a href="https://rsmtiempos.com.mx/ver4/login/" class="button large" id="button10">S.Tiempos</a>
+            </div>
+        </div>
+        <div class="block-small">
+            <div class="row">
+                <a href="https://rsmmex.sharepoint.com/sites/TIESPACIOCOMPARTIDO20232024/Documentos%20compartidos/Forms/AllItems.aspx?id=%2Fsites%2FTIESPACIOCOMPARTIDO20232024%2FDocumentos%20compartidos%2FINFORMACION%20DE%20EQUIPOS%2C%20USUARIOS%20Y%20LICENCIAS&viewid=b2d47dd7%2Da49f%2D4c5a%2Dac77%2D68e3238b93ad&noAuthRedirect=1" class="button small" id="button11">INVENTARIO</a>
+                <a href="https://rsmmex-my.sharepoint.com/:f:/g/personal/surname_ramirez_rsmmx_mx/Emriwc9h_TNOkRL2LXab3rgB8RhQ_Uuw_aGHcZ5ayjlAzw?e=er37jH" class="button small" id="button12">R. TICKETS</a>
+                <a href="https://rsmmex-my.sharepoint.com/:x:/g/personal/surname_ramirez_rsmmx_mx/EbaLjstJNSVDuvzUN4m1utQBxeyvsrMPJG9NxjnsIXGblg?e=kFAySA" class="button small" id="button17" class="button small" id="button13">User Tickets</a>
+                <a href="https://www.google.com/" class="button small" id="button14">LIBRE</a>
+                <a href="https://www.google.com/" class="button small" id="button15">LIBRE</a>
+            </div>
+            <div class="row">
+                <a href="https://www.google.com/" class="button small" id="button16"></a>
+                <a href="https://rsmmex-my.sharepoint.com/" class="button small" id="button17" >LIBRE</a>
+                <a href="https://www.google.com/" class="button small" id="button18"></a>
+                <a href="https://www.google.com/" class="button small" id="button19"></a>
+                <a href="https://www.google.com/" class="button small" id="button20"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
